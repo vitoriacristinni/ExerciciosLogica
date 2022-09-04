@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleição</title>
+</head>
+<body>
+    <script>
+
+        let atual = parseFloat(prompt("Insira o ano atual: "));
+        let nascimento = parseFloat(prompt("Insira o ano de seu nascimento: "));
+        let subtracao = (atual - nascimento);
+
+        if(subtracao > 16 && subtracao <18){
+            document.write("Seu voto é opcional")
+        }else if(subtracao < 16){
+            document.write("Você não pode votar")
+        }else if(subtracao > 18 && subtracao < 70){
+            document.write("Seu voto é obrigatório")
+        }else{
+            document.write("Seu voto é opcional")
+        }
+
+    </script>
+</body>
+</html>
